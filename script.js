@@ -12,6 +12,21 @@ function mostraPalavrasChave() {
 
 function processaTexto(texto) {
     let palavras = texto.split(/\P{L}+/u);
+
+let frequencias = {};
+for (let i of palavras) {
+    frequencia[i] =0;
+        for(let j of palavras) {
+            if(i==j) {
+                frequencias[i]++;
+            }
+        }
+}
     return palavras;
 }
+
+
+
+
+
     
